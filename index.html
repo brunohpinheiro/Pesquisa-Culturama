@@ -115,14 +115,34 @@
                     <option value="Rock">
                     <option value="Pop">
                     <option value="Samba">
-                    <option value="Sertanejo"><br>
-                </datalist>
+                    <option value="Sertanejo">
+                </datalist><br>
 
                 <label for="favColor">Cor favorita:</label>
                 <input type="color" name="userFavoriteColor" id="favColor">
             </fieldset>
-            
-            <button type="submit">Enviar</button>
+
+            <fieldset>
+                <legend>Pesquisa de satisfação</legend>
+                <p>Avalie o nosso serviço:</p>
+                <input type="radio" id="otimo" name="userOpinion" value="oti">
+                <label for="avaliacao">Ótimo</label>
+
+                <input type="radio" id="bom" name="userOpinion" value="bom">
+                <label for="avaliacao">Bom</label>
+
+                <input type="radio" id="regular" name="userOpinion" value="reg">
+                <label for="avaliacao">Regular</label>
+
+                <input type="radio" id="ruim" name="userOpinion" value="rui">
+                <label for="avaliacao">Ruim</label><br>
+
+                <label for="comentario">Comentário</label>
+                <textarea placeholder="Deixe aqui o seu comentário" name="userComment" id="comment"></textarea>
+                
+            </fieldset>
+                        
+            <br><button type="submit">Enviar</button>
         </form>
     </section>
 </body>
