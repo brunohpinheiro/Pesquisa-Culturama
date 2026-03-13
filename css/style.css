@@ -23,7 +23,7 @@ img {
     width: 100px;
 }
 
- h1 {
+h1 {
     font-family: "Fjalla One",sans-serif;
  }
 
@@ -31,6 +31,7 @@ form {
     background-color: white;
     padding: 15px;
     border-radius: 10px;
+    margin-bottom: 100px;
 }
 
 fieldset {
@@ -47,3 +48,66 @@ legend {
 
 }
 
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+p{
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+input,select,textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    width: auto;
+}
+
+input[type="color"]{
+    width: 40px;
+    padding: 0 5px;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+    border-color: red;
+}
+
+input:valid, select:valid, textarea:valid {
+    border-color: green;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-color: green;
+    color: #FFFFFF;
+}
+
+button[type="reset"]:hover{
+    background-color: orangered;
+    color: #FFFFFF;
+}
