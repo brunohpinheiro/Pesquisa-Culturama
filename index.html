@@ -38,9 +38,9 @@
                     <br>
 
                     <label for="phonenumber">Telefone</label>
-                    <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hífen" id="phonenumber" title="Digite o numero do seu telefone com DDD">
+                    <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hífen" id="phonenumber" title="Digite o numero do seu telefone com DDD" aria-describedby="phoneHelp">
+                    <small id="phoneHelp">Preencha com 11 dígitos no formato: DDD + Número sem espaços ou hífen</small>
                     <br>
-
                     <label for="image">Upload de foto</label>
                     <input type="file" accept="image/*" name="userImage" id="image">
 
@@ -57,8 +57,8 @@
                     <label for="notinf">Prefiro não informar</label>
                     <br>
 
-                    <label for="maritalStatus">Estado civil:</label>
-                    <select name="maritalStatus">
+                    <label for="marital">Estado civil:</label>
+                    <select name="maritalStatus" id="marital">
                         <option value="notInformed">Selecione...</option>
                         <option value="Namorando">Namorando</option>
                         <option value="Solteiro">Solteiro</option>
